@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">    
+        </head>
+    <body>
+
+<marquee><h1 style="color:Cyan">THIS IS <b> SOLOMON WOLDE  </b>this is my simple website<sup>nd</sup>i am computer networking worker <b>addis abeba </b> 
+since 2021 g.c.</h1></marquee>
+    <div class="background">
+        <div class="nav"> 
+        <a class="a active" href="#">HOME</a>
+        <a class="b" href="#">ABOUT ME</a>
+        <a class="c" href="#">GALLERY</a>
+        <a class="d" href="#">CONTACT ME</a>
+
+        <a class="e" href="#">AUDIO</a>
+        </div>
+        <div class="content">
+           <div class="home">
+             <h1>I am solomon wolde </h1>
+               <h3>working on addis abeba </h3>
+
+ <p color: green><b>Follow Me With<b></p>
+<a harf="#twitter"><img src="images/twitter.png"/><i class="fa fa-twitter fa-2x"></i></a>
+<a href="https://www.twitter.com/">twitter</a>
+<a harf="#facebook"><img src="images/fb.png"/><i class="fa fa-facebook-square fa-2x"></i></a>
+<a href="https://www.facebook.com/">FACEBOOK</a>
+<a harf="#google"><img src="images/goo.png"/><i class="fa fa-google-plus-square fa-2x"></i></a>
+<a href="https://www.google.com/">GOOGLE</a>
+<a harf="#youtube"><img src="images/youtube.png"/><i class="fa fa-youtube-square fa-2x"></i></i></a>
+<a href="https://www.youtube.com/">YOUTUBE</a>
+
+           </div> 
+            <div class="aboutus">
+                <p><b>MY BACKGROUND</b></p>
+                Hello Friends!! Welcome to my <b>Website.</b> This is my background.<br>
+                My name is solomon wolde. I was born in 1992 from my father wolde<br>
+                and from my mother alemnesh, in the gurage shewa ethiopia . <br>
+                When I was eight years old in 1997, I started the education. Grade one up to<br> 
+                eight I learned in yegrare Elementary school. Then after the end of the grade eight<br>
+                national exam, I passed to the secondary school. Again later I pass to preparatory<br>
+                school. In addition to this in 2009 I pass the grade 12 national exam and in 2010 e.c join <br>
+                 Wolkite University I am learning college of computing and informatics department of<br> 
+                 Information Technology.    
+                
+<marquee><img src="images/oo.jpg" /></marquee>
+            </div>
+            <div class="gallery">
+                <div class="image">
+                    <img src="images/1.jpg" />
+                </div>
+                <div class="image">
+                    <img src="images/2.jpg" />
+                </div>
+                <div class="image">
+                    <img src="images/3.jpg" />
+                </div>
+                <div class="image">
+                    <img src="images/4.jpg" />
+                </div>
+                <div class="image">
+                    <img src="images/5.jpg" />
+                </div>
+                <div class="video">
+     <center> <p>WELCOME TO MY VIDEOS</p> </center>
+    <video controls src="video/B.mp4" type="video/mp4" width="300">
+    </video> 
+    <video controls src="video/UE.mp4" type="video/mp4" width="300"> 	
+    </video>
+    <video controls src="video/gedamu.mp4" type="video/mp4" width="300"> 	
+    </video>
+    <video controls src="video/httpswww.mp4" type="video/mp4" width="300"> 	
+    </video>
+    <video controls src="video/Facebook 1.mp4" type="video/mp4" width=300"> 	
+    </video>
+     <video controls src="video/bir.mp4" type="video/mp4" width="300"> 	
+    </video>
+
+             </div>
+            </div>
+            </div>
+            <div class="contactus">
+                <div class="contactform">
+                    <form action=msafi5743@gmail.com method="post">
+                        <input type="text" name="" class="inputtext" value="First Name">
+                        <input type="text" name="" class="inputtext" value="Last Name">
+                        <input type="text" name="" class="inputtext" value="Your Email">
+                        <br><br><br>
+                        <textarea cols="4" rows="6" class="inputmessage">Your Messages...!!!</textarea>
+                        <br><br><br><br><br>
+                        <input type="submit" class="submitbutton" value="submit">
+                    </form>
+                </div>
+            </div>
+
+            <div class="audio">
+            		<center> <p>WELCOME TO MY AUDIOS</p> </center>	
+  <div class="music">
+    <audio controls src="audio/Tedy 233.mp3" type="audio/mp3">
+  </div>
+  <div class="music">
+    <audio controls src="audio/Track 12.mp3" type="audio/mp3">
+  </div>
+  <div class="music">
+    <audio controls src="audio/Track 13.mp3" type="audio/mp3">
+  </div>
+  <div class="music">
+    <audio controls src="audio/Best 2013.mp3" type="audio/mp3">
+  </div>
+  <div class="music">
+    <audio controls src="audio/yehalaw.mp3" type="audio/mp3">
+  </div>
+        </div>
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('a').click(function(){
+            // alert("i am click");
+            var selected = $(this);
+            $('a').removeClass('active');
+            $(selected).addClass('active');
+        });
+        var $a = $('.a'),
+        $b = $('.b'),
+        $c = $('.c'),
+        $d = $('.d'),
+        $e =$('.e'),
+        $home = $('.home'),
+        $aboutus = $('.aboutus'),
+        $gallery = $('.gallery'),
+        $contactus = $('.contactus');
+        $audio = $('.audio');
+
+        $a.click(function(){
+            $home.fadeIn();
+            $aboutus.fadeOut();
+            $gallery.fadeOut();
+            $contactus.fadeOut();
+            $audio.fadeOut();
+        });
+        $b.click(function(){
+            $aboutus.fadeIn();
+            $home.fadeOut();
+            $gallery.fadeOut();
+            $contactus.fadeOut();
+            $audio.fadeOut();
+        });
+         $c.click(function(){
+            $gallery.fadeIn();
+            $home.fadeOut();
+            $aboutus.fadeOut();
+            $contactus.fadeOut();
+            $audio.fadeOut();
+        });
+         $d.click(function(){
+            $contactus.fadeIn();
+            $home.fadeOut();
+            $gallery.fadeOut();
+            $aboutus.fadeOut();
+            $audio.fadeOut();
+        });
+          $e.click(function(){
+       $audio.fadeIn();
+        $home.fadeOut();
+        $aboutus.fadeOut();
+        $gallery.fadeOut();
+        $contactus.fadeOut();
+        
+  });
+    });
+</script>
+</body>
+</html>
